@@ -58,6 +58,7 @@ public class TestEnrichData {
     String qaUsername = "jmarin";
     String qaPassword = "PingPongtabletennis21!";
     int annualSales1_1 = new Random().nextInt(1000);
+    public int timeout = 10;
 
     @BeforeEach
     public void setup() {

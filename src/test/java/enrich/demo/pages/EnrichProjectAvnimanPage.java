@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import enrich.demo.tests.TestEnrichData;
+import java.util.concurrent.TimeUnit;
 
 public class EnrichProjectAvnimanPage {
     //Constructor
@@ -37,12 +39,15 @@ public class EnrichProjectAvnimanPage {
 
     //Click Sales
     public void clickSales() {
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         if(driver.findElements(projectSalesBtn).size() > 0) {
+            driver.manage().timeouts().implicitlyWait(new TestEnrichData().timeout, TimeUnit.SECONDS);
             driver.switchTo().frame("list");
             driver.findElement(projectSalesBtn).click();
             driver.switchTo().defaultContent();
         }
         else {
+            driver.manage().timeouts().implicitlyWait(new TestEnrichData().timeout, TimeUnit.SECONDS);
             expandInputs();
             driver.switchTo().frame("list");
             driver.findElement(projectSalesBtn).click();
