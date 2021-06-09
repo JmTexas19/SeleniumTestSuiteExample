@@ -1,0 +1,49 @@
+{
+    "name": "Revenue_yrs_base",
+    "title": "Revenue",
+    "description": "",
+    "indexes": {
+        "Years": [
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030"
+        ]
+    },
+    "data": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "10000",
+        "20000",
+        "30000",
+        "40000",
+        "50000",
+        "50000"
+    ],
+    "indexOrder": [
+        "Years"
+    ],
+    "indexNames": {
+        "Years": "Years"
+    },
+    "indexFilters": {},
+    "metaData": {
+        "lastPubDate": "Never",
+        "source": "Default Data"
+    },
+    "isGlobal": false
+}
