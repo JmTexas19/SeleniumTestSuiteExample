@@ -153,6 +153,7 @@ public class TestEnrichData {
         //Validate change in endpoint
         LOGGER.log(Level.INFO, "Validating data integrity of Annual Sales 1_1...");
         assertEquals(annualSales1_1 * 1000000, Integer.parseInt(getRawFactData(rawFactDataEndpoint).data.get(0)));
+        LOGGER.log(Level.INFO, "CONFIRMED data was saved");
     }
 
     //Get RawFactData
